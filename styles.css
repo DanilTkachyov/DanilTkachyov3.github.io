@@ -1,0 +1,92 @@
+body{
+	font-family: Times new roman;
+	margin: 0;
+	padding: 0;
+}
+#elementary{
+	margin: 0;
+	padding: 0;
+}
+header{
+	background-color: #ED9121;
+	max-width: 100%;
+	padding: 10px;
+}
+nav{
+	background-color: #F4A460;
+	max-width: 100%;
+}
+main{
+	max-width: 100%;
+	display: flex;
+	flex-direction: column;
+}
+footer{
+	padding: 20px;
+	margin-top: 20px;
+	background-color: #ED9121;
+	text-align: center;
+	max-width: 100%;
+}
+#header-component{
+	display: flex;
+}
+#logo{
+	padding: 10px;
+	float: left;
+	width: 100px;
+	height: 100px;
+}
+#name_website_horse{
+	font-size: 20px;
+	position: relative;
+	top: 40px;
+	width: 100%;
+	padding: 10px;
+}
+#elementary{
+	margin-top: 20px;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	height: auto;
+	align-content:flex-start;
+}
+#elementary li{
+	list-style-type: none;
+}
+#elementary a{
+	padding: 10px 20px;
+	display: block;
+	font-weight: 700;
+}
+#spreadsheet td, #spreadsheet th{
+	text-align: center;
+}
+#spreadsheet .oddnum{
+	background-color: #F8D568;
+}
+#spreadsheet .evennum{
+	background-color: #F4A460;
+}
+#questionnaire{
+	order: 1;
+}
+#spreadsheet{
+	order: 3;
+}
+@media screen and (min-width: 800px){
+	#elementary{
+		flex-direction: row;
+		justify-content: center;
+	}
+	main, nav, #header-component{
+		max-width: 960px;
+		margin: 0 auto;
+	}
+	#spreadsheet{
+		width: 350px;
+		height: 160px;
+		order: 0;
+	}
+}

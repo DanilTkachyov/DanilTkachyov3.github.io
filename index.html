@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+    <head>
+	    <meta charset="utf-8">
+		<link rel="stylesheet" href="styles.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Задание 3</title>
+	</head>
+    <body>
+		<header>
+			<div id="header-component">
+			<img style="float:left" src="https://pbs.twimg.com/media/EY4JBu5U0AAFviE.jpg" height="100" alt="Лого" />
+			<div id="name_website_horse">300 Лошадей</div></div>
+		</header>
+		<nav>
+			<ul id="elementary">
+				<li><a href="#giperlinks">Гиперссылки</a></li>
+				<li><a href="#spreadsheet">Таблица</a></li>
+				<li><a href="#questionnaire">Форма</a></li>
+				<li><a href="#basement">Подвал</a><li>
+			</ul>	
+		</nav>
+		<main>
+			<div id="giperlinks">
+        <ol>
+            <li><a href="http://example.com">абсолютная гиперссылка на главную страницу;</a></li>
+            <li><a href="https://example.com">абсолютная в прооколе https;</a></li>
+            <li><a href="ftp://example.com/word.txt">на файл на сервере FTP без авторизации;</a></li>
+            <li><a href="ftp://user:danil@kubsu.ru/text.txt">на файл на сервере FTP с авторизации;</a></li>
+            <li><a href="https://www.universe.com/solarsystem#planets">на фрагмент страницы некоторого сайта;</a></li>
+            <li><a href="https://example.com/relatives#mother">на фрагмент текущей страницы;</a></li>
+            <li><a href="http://example.com?relatives=20&brothers=3">с двумя параметрами в URL;</a></li>
+            <li>
+                <ul>
+                    <li><a href="http://family.ru"title="Всё о кровном родстве">Всё о семье;</a></li>
+                    <li><a href="http://family.ru/kids"title="Дети">Дети;</a></li>
+                </ul>
+            </li>
+            <li><a>ссылка без href;</a></li>
+            <li><a href>ссылка с пустым href;</a></li>
+            <li><a href="http://example.com" rel="nofollow">запрещен переход поисковикам;</a></li>
+            <li><a href="http://example.com" rel="noindex">запрещен для индексации поисковиками;</a></li>
+            <li><p><a href="http://exmaple.com">контекстная в тексте абзаца</a></p></li>
+            <li><a href="https://vsezhivoe.ru/yaguar/"><img src="https://vsezhivoe.ru/wp-content/uploads/2020/12/%D1%8F%D0%B3%D1%83%D0%B0%D1%80-%D1%84%D0%BE%D1%82%D0%BE.jpg" height="100" alt="Picture"></a></li>
+            <li><img src="https://vsezhivoe.ru/wp-content/uploads/2017/09/20.jpg" alt="wolf" width="300" height="300" usemap="#wolf"></li>
+				<map name="wolf">
+					<area shape="circle" coords="150,150,50" href="https://i.ytimg.com/vi/4XbHCcF_ELM/maxresdefault.jpg" alt="nose" target="_blank">
+					<area shape="rect" coords="40,90,130,190" href="https://www.livingwithwolves.org/wp-content/uploads/2014/05/119.wsA18_9_10.jpg" alt="tail" target="_blank">
+				</map>
+            <li><a href="index.html">относительная ссылка в текущем каталоге;</a></li>
+            <li><a href="about/project.html">относительная ссылка в каталоге about;</a></li>
+            <li><a href="../project.html">относительная ссылка в каталоге уровнем выше; </a></li>
+            <li><a href="../../project.html">относительная ссылка в каталоге двумя уровнями выше;</a></li>
+            <li><a href="/home">сокращенная ссылка на главную;</a></li>
+            <li><a href="/about">сокращенная ссылка на внутреннюю;</a></li>
+        </ol></div>
+		<table id="spreadsheet">
+			<tbody>
+				<tr>
+				<th class="oddnum">№</th>
+				<th class="oddnum">Владелец машины</th>
+				<th class="oddnum">Марка машины</th>
+				<th class="oddnum">Мощность л/с</th>
+			</tr>
+			<tr>
+				<td class="evennum">1</td>
+				<td class="evennum">Данил</td>
+				<td class="evennum">Ford</td>
+				<td class="evennum">300</td>
+			</tr>
+			<tr>
+				<td class="oddnum">2</td>
+				<td class="oddnum">Никита</td>
+				<td class="oddnum">Datsun</td>
+				<td class="oddnum">102</td>
+			</tr>
+			<tr>
+				<td class="evennum">3</td>
+				<td class="evennum">Алёна</td>
+				<td class="evennum">Nissan</td>
+				<td class="evennum">180</td>
+			</tr>
+			<tr>
+				<td class="oddnum">4</td>
+				<td class="oddnum">Мария</td>
+				<td class="oddnum">Mazda</td>
+				<td class="oddnum">150</td>
+			</tr>
+			<tr>
+				<td class="evennum">5</td>
+				<td class="evennum">Ольга</td>
+				<td class="evennum">Chevrolet</td>
+				<td class="evennum">160</td>
+			</tr>
+			<tr>
+				<td class="oddnum" colspan="3">Средняя мощность</td>
+				<td class="oddnum">180 л/с</td>
+				</tr></tbody>
+		</table>
+		<form id="questionnaire">
+			<h4>Форма</h4>
+		<h4><form action="/"
+               method="POST">
+            <label>
+                ФИО:<br/>
+                <input name="field-name-1" value="Введите ФИО"/>
+            </label><br/>
+            <label>
+                Email:<br/>
+                <input name="field-email" value="example@example.com" type="email"/>
+            </label><br>
+            <label>
+                Дата рождения:<br/>
+                <input name="field-date" value="1990-01-01" type="date"/> 
+            </label><br/>
+            Пол:<br/>
+            <label> 
+                <input type="radio" checked="checked" name="field-gender" value="Male"/>
+                Мужской
+            </label><br/>
+            <label> 
+                <input type="radio" checked="checked" name="field-gender" value="Female"/>
+                Женский
+            </label><br/>
+            <label> 
+                <input type="radio" checked="checked" name="field-gender" value="not selected"/>
+                Не выбрано
+            </label><br/>
+            Количество конечностей:
+            <br/>
+            <label>
+                <input type="radio" checked="checked" name="armsandlegs" value="4"/>
+                4
+            </label><br/>  
+            <label>
+                <input type="radio" checked="checked" name="armsandlegs" value="3"/>
+                3 
+            </label><br/>  
+            <label>
+                <input type="radio" checked="checked" name="armsandlegs" value="2"/>
+                2 
+            </label><br/>  
+               <label>
+                <input type="radio" checked="checked" name="armsandlegs" value="1"/>
+                1 
+            </label><br/>
+            <label>
+                Сверхспособности:<br/>
+                <select name="superpower"
+                 multiple="multiple">
+                    <option value="immortal" selected="selected">Бессмертие</option>
+                    <option value="walls">Прохождение сквозь стены</option>
+                    <option value="levitation">Левитация</option>
+                </select></label><br/>
+            <label>
+                Биография
+                <br/>
+                <textarea name="about">Расскажите о себе</textarea>
+            </label><br/>
+            <label>
+                С контрактом ознакомлен(а)
+                <input type="checkbox" checked="checked" name="check-1"/>
+            </label>
+            <br>
+            <input type="submit" value="Отправить" />
+        </h4></form>
+		</main>
+		<footer id="basement">
+			<div>Ткачёв Данил 27/2</div>
+		</footer>
+    </body>
+</html>
